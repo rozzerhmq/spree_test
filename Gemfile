@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.3'
 gem 'spree'
+gem 'spree_heroku', :git => 'git://github.com/joneslee85/spree-heroku.git'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
@@ -24,7 +25,7 @@ end
 gem 'jquery-rails'
 
 group :production do
-  gem 'thin'
+  gem 'unicorn'
   gem 'pg'
 end
 # To use ActiveModel has_secure_password
